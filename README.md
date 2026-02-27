@@ -66,9 +66,7 @@
 **> systemctl status human-activity.service**
 
 ```zsh
-[LOG] Initializing Activity Monitor for User: TRAN LAI AN
-[LOG] Status: ONLINE (High Productivity Mode)
-[LOG] Location: CTU_IT_High_Quality_Lab
+
 
 -----------------------------------------------------------
 | TIME_RANGE (ICT) | PROCESS_NAME        | SYSTEM_STATUS  |
@@ -81,17 +79,3 @@
 | 20:00 - 00:00    | Deep_Coding_Session | [ OVERCLOCK ]  |
 | 00:00 - 07:00    | Neural_Sleep_Cycle  | [ HIBERNATING ]|
 -----------------------------------------------------------
-
-[REPORT] Peak Performance detected at 22:00 (Matrix Vibe)
-[REPORT] Average Uptime: 17 Hours / Day
-[REPORT] Task_Priority: Automation > Manual_Task
-
-### 📡 ENCRYPTED_COMMUNICATION
-<p align="center">
-<a href="https://www.facebook.com/namikaze0608"><img src="https://img.shields.io/badge/FB_LINK-00FF41?style=for-the-badge&logo=facebook&logoColor=00FF41&labelColor=black" /></a>
-<a href="mailto:anjoestar0@gmail.com"><img src="https://img.shields.io/badge/EMAIL_SEND-00FF41?style=for-the-badge&logo=gmail&logoColor=00FF41&labelColor=black" /></a>
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00FF41&height=100&section=footer&bgColor=000000" />
-</p>
