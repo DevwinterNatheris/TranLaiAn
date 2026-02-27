@@ -25,8 +25,6 @@
             margin: 0;
             min-height: 100vh;
             text-shadow: 0 0 2px var(--neon-green-glow);
-            /* Hiệu ứng Glitch tách màu thỉnh thoảng giật 1 phát */
-            animation: rgb-split 4s infinite;
         }
 
         .terminal-window {
@@ -40,11 +38,9 @@
                         inset 0 0 30px rgba(0, 0, 0, 0.8);
             overflow: hidden;
             position: relative;
-            /* Hiệu ứng màn hình chớp tắt nhẹ */
-            animation: glitch-flicker 3s infinite;
         }
 
-        /* Scanlines trôi xuống tạo cảm giác màn hình rè */
+        /* Scanlines trôi xuống tạo cảm giác màn hình CRT */
         .terminal-window::before {
             content: " ";
             display: block;
@@ -58,32 +54,10 @@
             animation: scanline-scroll 0.3s linear infinite;
         }
 
-        /* --- CÁC ANIMATION HIỆU ỨNG RÈ MÀU XANH --- */
         @keyframes scanline-scroll {
             0% { background-position: 0 0; }
             100% { background-position: 0 4px; }
         }
-
-        @keyframes glitch-flicker {
-            0% { opacity: 0.95; }
-            5% { opacity: 0.7; }
-            10% { opacity: 0.95; }
-            15% { opacity: 0.8; }
-            20% { opacity: 1; }
-            95% { opacity: 1; }
-            96% { opacity: 0.6; }
-            98% { opacity: 1; }
-            100% { opacity: 0.95; }
-        }
-
-        @keyframes rgb-split {
-            0%, 94% { text-shadow: 0 0 2px var(--neon-green-glow); transform: translate(0); }
-            95% { text-shadow: 3px 0 rgba(255,0,0,0.7), -3px 0 rgba(0,255,65,0.7); transform: translateX(-2px) skewX(2deg); }
-            96% { text-shadow: 0 0 2px var(--neon-green-glow); transform: translate(0); }
-            98% { text-shadow: -3px 0 rgba(0,255,65,0.8), 3px 0 rgba(0,0,255,0.5); transform: translateX(2px) skewX(-2deg); }
-            100% { text-shadow: 0 0 2px var(--neon-green-glow); transform: translate(0); }
-        }
-        /* ----------------------------------------- */
 
         .terminal-header {
             background: linear-gradient(to bottom, #2a2a2a, #1a1a1a);
@@ -209,15 +183,34 @@
         .social-links a img { transition: all 0.3s ease; filter: grayscale(20%); }
         .social-links a:hover img { transform: scale(1.05); filter: grayscale(0%); box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
 
-        .matrix-gif {
+        /* --- Dãy code bị rè màu xanh --- */
+        .matrix-code-container {
             width: 100%;
             height: 120px;
-            object-fit: cover;
+            background: #000;
             border: 1px solid rgba(0, 255, 65, 0.3);
             border-radius: 4px;
-            opacity: 0.8;
             margin-bottom: 15px;
             box-shadow: 0 0 15px rgba(0, 255, 65, 0.1);
+            overflow: hidden;
+            position: relative;
+            font-size: 13px;
+            line-height: 1.4;
+            color: var(--neon-green);
+            text-align: left;
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 0.85;
+            animation: text-glitch 0.3s infinite;
+        }
+
+        @keyframes text-glitch {
+            0% { transform: skew(0deg); text-shadow: 1px 0px 0px rgba(0, 255, 65, 0.8); }
+            20% { transform: skew(-1deg) translateX(1px); text-shadow: 2px 0px 0px rgba(0, 255, 65, 0.8); }
+            40% { transform: skew(1deg) translateX(-1px); text-shadow: -1px 0px 0px rgba(0, 255, 65, 0.8); }
+            60% { transform: skew(0deg); text-shadow: 1px 0px 0px rgba(0, 255, 65, 0.8); }
+            80% { transform: skew(0.5deg) translateX(0.5px); text-shadow: 2px 0px 0px rgba(0, 255, 65, 0.8); }
+            100% { transform: skew(0deg); text-shadow: 1px 0px 0px rgba(0, 255, 65, 0.8); }
         }
     </style>
 </head>
@@ -235,7 +228,17 @@
 
     <div class="terminal-content">
         <div style="text-align: center; margin-bottom: 20px;">
-            <img src="https://media.giphy.com/media/VwXcgwGIPyiiY/giphy.gif" class="matrix-gif" alt="Matrix Rain Effect">
+            
+            <div class="matrix-code-container">
+                > SYSTEM_BOOT_SEQUENCE_INIT...<br>
+                > DECRYPTING_AI_MODULES... [OK]<br>
+                01001000 01010100 01001101 01001100 01101111 01111001<br>
+                10110010 01100101 11010010 10011001 00101011 01110000<br>
+                > ROOT_ACCESS_GRANTED.<br>
+                > MOUNTING_DEVOPS_DRIVE... [OK]<br>
+                > ESTABLISHING_SECURE_CONNECTION...
+            </div>
+
             <div class="typing-container">
                 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=00FF41&center=true&vCenter=true&width=700&lines=Initializing+DevOps+Environment...;Accessing+CTU+High+Quality+Database...;Welcome+Trần+Lai+An+to+the+Command+Center." />
             </div>
@@ -258,25 +261,17 @@
         </div>
 
         <div class="section">
-            <div class="section-title">🐙 [ GITHUB_COMMAND_CENTER ]</div>
-            <div class="badge-row">
-                <img src="https://img.shields.io/badge/Followers-1.5M+-00FF41?style=flat-square&logo=github&labelColor=black" />
-                <img src="https://img.shields.io/badge/Stars_Earned-850K+-00FF41?style=flat-square&logo=apachespark&labelColor=black" />
-                <img src="https://img.shields.io/badge/Commits_2024-99,999+-00FF41?style=flat-square&logo=git&labelColor=black" />
-                <img src="https://img.shields.io/badge/PRs_Merged-10,000+-00FF41?style=flat-square&logo=github&labelColor=black" />
-            </div>
-            <div class="info-grid" style="margin-bottom: 15px;">
-                <span class="label">⭐ Global Rank:</span> <strong>#1 Worldwide (Estimated)</strong>
-                <span class="label">🔥 Current Streak:</span> <span style="color: #ffbd2e; text-shadow: 0 0 8px rgba(255,189,46,0.6);">1,460 Days (4 Years Non-stop)</span>
-                <span class="label">📦 Core Repos:</span> <span>Linux Kernel, TensorFlow, React</span>
-                <span class="label">💻 Lines of Code:</span> <span>> 50,000,000 (0 Bugs detected)</span>
-            </div>
+            <div class="section-title">🎯 [ MY_GOALS ]</div>
             <ul class="terminal-list">
                 <li>👑 <strong>God-Tier Dev:</strong> Created frameworks that frameworks use to build frameworks.</li>
                 <li>🚀 <strong>Architected:</strong> Global CI/CD pipelines deploying to Mars servers with 0ms latency.</li>
                 <li>🛡️ <strong>Zero-Day Hunter:</strong> Found and patched vulnerabilities before the hackers even thought of them.</li>
+                <li>🗼 <strong>DevOps Expert:</strong> Sang Nhật Bản đảm nhận vị trí DevOps cho một tập đoàn công nghệ lớn.</li>
+                <li>💻 <strong>Polyglot Master:</strong> Thành thạo tất cả các ngôn ngữ lập trình hiện có.</li>
+                <li>🧠 <strong>AI Overlord:</strong> Nắm trùm toàn bộ các công nghệ Trí tuệ nhân tạo (AI).</li>
             </ul>
         </div>
+
         <div class="section">
             <div class="section-title">💻 [ TECHNICAL_ARSENAL ]</div>
             <img src="https://skillicons.dev/icons?i=java,py,cpp,cs,ruby,html,git,github,docker,kubernetes,linux,bash,aws,jenkins,terraform&theme=dark" width="100%" style="margin-top: 5px;"/>
