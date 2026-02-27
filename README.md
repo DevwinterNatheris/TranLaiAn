@@ -52,12 +52,13 @@
 
 ### 🕵️ [HUMAN_INTERFACE_ASSETS]
 **> Scanning personal interests...**
-- 🎮 **Tactical Simulation:** Khám phá thế giới qua các tựa game chiến thuật và phản xạ cao.
-- 🎧 **Cyber-Acoustics:** Lofi & Synthwave — Tần số âm thanh giúp tối ưu hóa luồng suy nghĩ khi fix bug.
-- ☕ **Dark Matter Extraction:** Nghiện hương vị cà phê đậm đặc để duy trì uptime của não bộ.
-- 📸 **Visual Capturing:** Lưu giữ các cấu trúc thế giới thực qua ống kính nhiếp ảnh.
-- 🛸 **Tech Scouting:** Luôn truy lùng các công nghệ mới để tích hợp vào hệ thống cá nhân.
+> cat /home/tranlaian/interests.log
 
+* [INT] Tactical_Simulations: Navigating virtual worlds through high-reflex & strategic gameplay.
+* [INT] Cyber_Acoustics: Lofi & Synthwave — Frequencies optimized for deep focus and debugging sessions.
+* [INT] Dark_Matter_Extraction: Addicted to bold coffee flavors to maintain maximum brain uptime.
+* [INT] Visual_Capturing: Rendering real-world structures through the lens of photography.
+* [INT] Tech_Scouting: Scouting for cutting-edge technologies to integrate into personal infrastructure.
 ---
 
 ---
