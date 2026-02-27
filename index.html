@@ -1,82 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRAN LAI AN | FULL COMMAND CENTER</title>
+    <title>Terminal Profile - Tran Lai An</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        :root { --matrix-green: #00FF41; --bg-black: #0d1117; --text-gray: #c9d1d9; }
-        body { background-color: var(--bg-black); color: var(--text-gray); font-family: 'Fira Code', 'Courier New', monospace; line-height: 1.6; margin: 0; padding: 20px; display: flex; justify-content: center; }
-        .mainframe { max-width: 900px; width: 100%; border: 1px solid rgba(0, 255, 65, 0.2); padding: 30px; box-shadow: 0 0 20px rgba(0, 255, 65, 0.1); background: #000; }
-        h1, h3 { color: var(--matrix-green); text-transform: uppercase; border-bottom: 1px solid rgba(0, 255, 65, 0.3); padding-bottom: 8px; }
-        .highlight { color: var(--matrix-green); font-weight: bold; }
-        .terminal { background: #161b22; color: var(--matrix-green); padding: 20px; border-radius: 6px; overflow-x: auto; white-space: pre; border: 1px solid #30363d; margin: 20px 0; font-size: 14px; }
-        .badge-group { margin: 15px 0; display: flex; flex-wrap: wrap; gap: 8px; }
-        ul { list-style: none; padding-left: 0; }
-        ul li::before { content: "> "; color: var(--matrix-green); }
-        ul li { margin-bottom: 12px; }
-        a { text-decoration: none; transition: 0.3s; }
-        a:hover { opacity: 0.7; transform: scale(1.05); }
+        :root {
+            --neon-green: #00FF41;
+            --neon-green-glow: rgba(0, 255, 65, 0.4);
+            --bg-black: #050505;
+            --terminal-bg: #0c0c0c;
+            --border-gray: #333;
+        }
+
+        body {
+            background-color: var(--bg-black);
+            background-image: radial-gradient(circle at center, #111 0%, #000 100%);
+            color: var(--neon-green);
+            font-family: 'Fira Code', 'Courier New', monospace;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            margin: 0;
+            min-height: 100vh;
+            text-shadow: 0 0 2px var(--neon-green-glow);
+        }
+
+        .terminal-window {
+            width: 100%;
+            max-width: 850px;
+            background-color: var(--terminal-bg);
+            border: 1px solid #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8), 
+                        0 0 20px rgba(0, 255, 65, 0.15), 
+                        inset 0 0 30px rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .terminal-window::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+            background-size: 100% 4px;
+            z-index: 10;
+            pointer-events: none;
+            opacity: 0.6;
+        }
+
+        .terminal-header {
+            background: linear-gradient(to bottom, #2a2a2a, #1a1a1a);
+            padding: 12px 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--border-gray);
+            position: relative;
+            z-index: 20;
+        }
+
+        .dots { display: flex; gap: 8px; margin-right: 15px; }
+        .dot { 
+            width: 12px; height: 12px; border-radius: 50%; 
+            box-shadow: inset 0 1px 2px rgba(255,255,255,0.3), 0 1px 2px rgba(0,0,0,0.5);
+        }
+        .red { background: #ff5f56; }
+        .yellow { background: #ffbd2e; }
+        .green { background: #27c93f; }
+
+        .terminal-content {
+            padding: 30px;
+            position: relative;
+            z-index: 20;
+        }
+
+        .section {
+            border: 1px dashed var(--border-gray);
+            margin-bottom: 25px;
+            padding: 20px 15px 15px 15px;
+            position: relative;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            border-color: rgba(0, 255, 65, 0.5);
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.05) inset;
+        }
+
+        .section-title {
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: var(--terminal-bg);
+            padding: 0 12px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #fff;
+            text-shadow: 0 0 8px var(--neon-green);
+            letter-spacing: 1px;
+        }
+
+        .typing-container {
+            text-align: center;
+            margin-bottom: 25px;
+            filter: drop-shadow(0 0 5px var(--neon-green-glow));
+        }
+
+        .badge-row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .badge-row img {
+            transition: transform 0.2s;
+        }
+        .badge-row img:hover {
+            transform: translateY(-2px);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 12px 15px;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        .label { 
+            color: #888; 
+            text-shadow: none;
+        }
+        strong {
+            color: #fff;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.9em;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        th, td {
+            border: 1px solid #222;
+            padding: 10px 12px;
+            text-align: left;
+            transition: background 0.2s;
+        }
+
+        th {
+            background: rgba(0, 255, 65, 0.1);
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        tr:hover td {
+            background-color: rgba(0, 255, 65, 0.08);
+            color: #fff;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-links a img {
+            transition: all 0.3s ease;
+            filter: grayscale(20%);
+        }
+
+        .social-links a:hover img {
+            transform: scale(1.05);
+            filter: grayscale(0%);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        a { color: var(--neon-green); text-decoration: none; }
+        a:hover { text-decoration: underline; text-shadow: 0 0 8px var(--neon-green); }
+
+        .matrix-gif {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border: 1px solid rgba(0, 255, 65, 0.3);
+            border-radius: 4px;
+            opacity: 0.8;
+            margin-bottom: 15px;
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.1);
+            transition: opacity 0.3s;
+        }
+        
+        .matrix-gif:hover {
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
-    <div class="mainframe">
-        <h1>> INITIALIZING FULL_PROFILE_AN...</h1>
-        
-        <img src="https://i.pinimg.com/originals/27/14/66/271466088d2274474d28d682bfdc35df.gif" style="width: 100%; height: 120px; object-fit: cover; border: 1px solid var(--matrix-green); margin-bottom: 20px;" alt="Matrix Rain">
 
-        <h3>📂 [ SYSTEM_PROFILE ]</h3>
-        <ul>
-            <li>👤 <span class="highlight">Full Name:</span> Trần Lai An</li>
-            <li>📅 <span class="highlight">Date of Birth:</span> August 6th, 2007</li>
-            <li>📍 <span class="highlight">Address:</span> Cầu Kè, Vĩnh Long Province, Vietnam</li>
-            <li>🎓 <span class="highlight">Education:</span> IT (High Quality Program) @ Can Tho University (CTU)</li>
-        </ul>
-
-        <h3>💻 [ TECHNICAL_ARSENAL ]</h3>
-        <p>> Proficient in a wide range of programming languages and technologies:</p>
-        <div class="terminal">
-LANGUAGES: [ Java, Python, C++, C#, Ruby, HTML/CSS ]
-DEVOPS:    [ Docker, Kubernetes, Linux, AWS, Jenkins, Terraform ]</div>
-        <div class="badge-group">
-            <img src="https://skillicons.dev/icons?i=java,py,cpp,cs,ruby,html,css,git,github,docker,kubernetes,linux,bash,aws,jenkins,terraform&theme=dark" />
+<div class="terminal-window">
+    <div class="terminal-header">
+        <div class="dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
         </div>
-
-        <h3>🌐 [ LANGUAGE_INTERFACE ]</h3>
-        <ul>
-            <li>🇺🇸 <strong>English</strong> — <span class="highlight">[ PROFESSIONAL_COMM ]</span></li>
-            <li>🇰🇷 <strong>Korean (한국어)</strong> — <span class="highlight">[ INTERMEDIATE_DATA ]</span></li>
-            <li>🇯🇵 <strong>Japanese (日本語)</strong> — <span class="highlight">[ BASIC_INTERFACE ]</span></li>
-            <li>🇨🇳 <strong>Chinese (中文)</strong> — <span class="highlight">[ BASIC_PROCESSING ]</span></li>
-            <li>🇩🇪 <strong>German (Deutsch)</strong> — <span class="highlight">[ LEARNING_MODE ]</span></li>
-            <li>🇮🇳 <strong>Hindi (हिन्दी)</strong> — <span class="highlight">[ EXPLORING_MODE ]</span></li>
-        </ul>
-
-        <h3>🏆 [ EXPERIENCE_&_ACHIEVEMENTS ]</h3>
-        <ul>
-            <li>🛠️ <span class="highlight">GitHub Contributor:</span> Huge contributions to open-source repositories.</li>
-            <li>🌐 <span class="highlight">Tech Forums:</span> Active contributor and community expert.</li>
-        </ul>
-
-        <h3>🕒 [ UPTIME_MONITOR ]</h3>
-        <div class="terminal">
-| TIME_RANGE (ICT) | PROCESS_NAME         | SYSTEM_STATUS  |
-|------------------|----------------------|----------------|
-| 08:30 - 11:30    | CTU_University_Lab   | [ EXECUTING ]  |
-| 13:30 - 17:30    | Research_&_DevOps    | [ RUNNING ]    |
-| 20:00 - 00:00    | Deep_Coding_Session  | [ OVERCLOCK ]  |</div>
-
-        <h3>🤝 [ CONNECT_WITH_ME ]</h3>
-        <div class="badge-group">
-            <a href="mailto:anjoestar0@gmail.com">
-                <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-            </a>
-            <a href="https://www.facebook.com/namikaze0608">
-                <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
-            </a>
-        </div>
-
-        <img src="https://capsule-render.vercel.app/api?type=waving&color=00FF41&height=100&section=footer&bgColor=000000" style="width: 100%; margin-top: 20px;" />
+        <div style="font-size: 13px; color: #888; font-family: 'Courier New', Courier, monospace; letter-spacing: 0.5px;">> Initializing Full_Profile_An...</div>
     </div>
+
+    <div class="terminal-content">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="https://i.pinimg.com/originals/27/14/66/271466088d2274474d28d682bfdc35df.gif" class="matrix-gif" alt="Matrix">
+            <div class="typing-container">
+                <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=00FF41&center=true&vCenter=true&width=700&lines=Initializing+DevOps+Environment...;Accessing+CTU+High+Quality+Database...;Welcome+Trần+Lai+An+to+the+Command+Center." />
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">📂 [ SYSTEM_PROFILE ]</div>
+            <div class="badge-row">
+                <img src="https://img.shields.io/badge/USER-TRAN_LAI_AN-00FF41?style=flat-square&labelColor=black" />
+                <img src="https://img.shields.io/badge/CLASS-IT_HIGH_QUALITY-00FF41?style=flat-square&labelColor=black" />
+                <img src="https://img.shields.io/badge/LOC-VINH_LONG_VN-00FF41?style=flat-square&labelColor=black" />
+            </div>
+            <div class="info-grid">
+                <span class="label">👤 Full Name:</span> <strong>Trần Lai An</strong>
+                <span class="label">📅 Birth:</span> <span>August 6th, 2007</span>
+                <span class="label">📍 Location:</span> <span>Cau Ke, Vinh Long, VN</span>
+                <span class="label">🎓 Academic:</span> <span>IT (High Quality) - CTU</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">💻 [ TECHNICAL_ARSENAL ]</div>
+            <img src="https://skillicons.dev/icons?i=java,py,cpp,cs,docker,kubernetes,linux,bash,aws,jenkins,terraform&theme=dark" width="100%" style="margin-top: 5px;"/>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🌐 [ LANGUAGE_INTERFACE ]</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 5px;">
+                <div>🇺🇸 English - <span style="color: #fff;">[PROFESSIONAL]</span></div>
+                <div>🇰🇷 Korean - <span style="color: #fff;">[INTERMEDIATE]</span></div>
+                <div>🇯🇵 Japanese - <span style="color: #fff;">[BASIC]</span></div>
+                <div>🇩🇪 German - <span style="color: #fff;">[LEARNING]</span></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🕒 [ UPTIME_MONITOR ]</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>TIME (ICT)</th>
+                        <th>PROCESS NAME</th>
+                        <th>STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:30 - 11:30</td>
+                        <td>CTU_University_Lab</td>
+                        <td style="color: #fff;">[ EXECUTING ]</td>
+                    </tr>
+                    <tr>
+                        <td>13:30 - 17:30</td>
+                        <td>Research_&_DevOps</td>
+                        <td style="color: #fff;">[ RUNNING ]</td>
+                    </tr>
+                    <tr>
+                        <td>20:00 - 00:00</td>
+                        <td>Deep_Coding_Session</td>
+                        <td style="color: #ff5f56; text-shadow: 0 0 5px rgba(255,95,86,0.5);">[ OVERCLOCK ]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="margin-top: 25px; text-align: left; padding: 0 5px;">
+            <div style="font-weight: bold; color: #fff; text-shadow: 0 0 5px var(--neon-green);">🤝 [ CONNECT_WITH_ME ]</div>
+            <div class="social-links">
+                <a href="mailto:anjoestar0@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+                <a href="https://www.facebook.com/namikaze0608"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
