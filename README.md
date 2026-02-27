@@ -61,3 +61,18 @@
 | 13:30 - 17:30    | Research_&_DevOps   | [ RUNNING ]    |
 | 20:00 - 00:00    | Deep_Coding_Session | [ OVERCLOCK ]  |
 -----------------------------------------------------------
+```
+🤝 [ CONNECT_WITH_ME ]
+> Initializing outgoing secure connection...
+
+<p align="left">
+<a href="mailto:anjoestar0@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+<a href="https://www.facebook.com/namikaze0608">
+<img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
+</a>
+<a href="https://www.google.com/search?q=https://github.com/YOUR_USERNAME">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/GitHub-181717%3Fstyle%3Dfor-the-badge%26logo%3Dgithub%26logoColor%3Dwhite" />
+</a>
+</p>
