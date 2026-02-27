@@ -60,22 +60,30 @@
 📸 Visual_Capturing: Rendering real-world via photography.
 
 🛸 Tech_Scouting: Scouting for cutting-edge Cloud tech.
-🌐 [LANGUAGE_INTERFACE]
-<p align="left">
-  <img src="https://img.shields.io/badge/English-PROFESSIONAL_COMM-00FF41?style=for-the-badge&logo=google-translate&logoColor=black&labelColor=00FF41" />
-  <img src="https://img.shields.io/badge/Korean-INTERMEDIATE_DATA-00FF41?style=for-the-badge&logo=south-korea&logoColor=black&labelColor=00FF41" />
-  <img src="https://img.shields.io/badge/Japanese-BASIC_INTERFACE-00FF41?style=for-the-badge&logo=japan&logoColor=black&labelColor=00FF41" />
-  <img src="https://img.shields.io/badge/Chinese-BASIC_PROCESSING-00FF41?style=for-the-badge&logo=china&logoColor=black&labelColor=00FF41" />
-  <img src="https://img.shields.io/badge/German-LEARNING_MODE-00FF41?style=for-the-badge&logo=germany&logoColor=black&labelColor=00FF41" />
-  <img src="https://img.shields.io/badge/Hindi-EXPLORING_MODE-00FF41?style=for-the-badge&logo=india&logoColor=black&labelColor=00FF41" />
-</p>
+🌐 [LANGUAGE_INTERFACE: MULTI-REGION SUPPORT]
+🇺🇸 English <img src="https://img.shields.io/badge/USA-PROFESSIONAL_COMM-00FF41?style=for-the-badge&logo=american-express&logoColor=black&labelColor=00FF41" />
 
-* 🇺🇸 **English:** `[ PROFESSIONAL_COMM ]` - Giao tiếp và làm việc chuyên nghiệp.
-* 🇰🇷 **Korean (한국어):** `[ INTERMEDIATE_DATA ]` - Xử lý dữ liệu và hội thoại trung cấp.
-* 🇯🇵 **Japanese (日本語):** `[ BASIC_INTERFACE ]` - Giao diện cơ bản và đọc hiểu sơ cấp.
-* 🇨🇳 **Chinese (中文):** `[ BASIC_PROCESSING ]` - Khả năng xử lý ngôn ngữ nền tảng.
-* 🇩🇪 **German (Deutsch):** `[ LEARNING_MODE ]` - Đang nạp dữ liệu ngôn ngữ mới.
-* 🇮🇳 **Hindi (हिन्दी):** `[ EXPLORING_MODE ]` - Đang thăm dò và làm quen cấu trúc.
+[ STATUS: High-speed communication & documentation enabled ]
+
+🇰🇷 Korean (한국어) <img src="https://img.shields.io/badge/KOREA-INTERMEDIATE_DATA-00FF41?style=for-the-badge&logo=naver&logoColor=black&labelColor=00FF41" />
+
+[ STATUS: Intermediate data processing & conversation ]
+
+🇯🇵 Japanese (日本語) <img src="https://img.shields.io/badge/JAPAN-BASIC_INTERFACE-00FF41?style=for-the-badge&logo=nintendo&logoColor=black&labelColor=00FF41" />
+
+[ STATUS: Basic interface navigation & reading ]
+
+🇨🇳 Chinese (中文) <img src="https://img.shields.io/badge/CHINA-BASIC_PROCESSING-00FF41?style=for-the-badge&logo=wechat&logoColor=black&labelColor=00FF41" />
+
+[ STATUS: Foundational language processing unit ]
+
+🇩🇪 German (Deutsch) <img src="https://img.shields.io/badge/GERMANY-LEARNING_MODE-00FF41?style=for-the-badge&logo=mercedes-benz&logoColor=black&labelColor=00FF41" />
+
+[ STATUS: New language pack currently downloading... ]
+
+🇮🇳 Hindi (हिन्दी) <img src="https://img.shields.io/badge/INDIA-EXPLORING_MODE-00FF41?style=for-the-badge&logo=tata&logoColor=black&labelColor=00FF41" />
+
+[ STATUS: Exploring linguistic structures & syntax ]
 ### 🕒 [TERMINAL: ACTIVITY_MONITOR]
 ```zsh
 -----------------------------------------------------------
