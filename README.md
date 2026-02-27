@@ -60,9 +60,14 @@
 * [INT] Visual_Capturing: Rendering real-world structures through the lens of photography.
 * [INT] Tech_Scouting: Scouting for cutting-edge technologies to integrate into personal infrastructure.
 ---
-
+🌐 [LANGUAGE_INTERFACE]
+English: [ PROFESSIONAL_COMM ] 🇺🇸
+Korean (한국어): [ INTERMEDIATE_DATA ] 🇰🇷
+Japanese (日本語): [ BASIC_INTERFACE ] 🇯🇵
+Chinese (中文): [ BASIC_PROCESSING ] 🇨🇳
+German (Deutsch): [ LEARNING_MODE ] 🇩🇪
+Hindi (हिन्दी): [ EXPLORING_MODE ] 🇮🇳
 ---
-
 ### 🕒 [TERMINAL: ACTIVITY_MONITOR]
 ```zsh
 -----------------------------------------------------------
