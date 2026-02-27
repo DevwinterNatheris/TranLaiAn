@@ -3,53 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trần Lai An | Command Center</title>
+    <title>TRAN LAI AN | COMMAND CENTER</title>
     <style>
-        :root { --matrix-green: #00FF41; --bg-black: #0d1117; }
-        body { background-color: var(--bg-black); color: white; font-family: 'Fira Code', monospace; line-height: 1.6; margin: 0; padding: 20px; }
-        .container { max-width: 900px; margin: auto; border: 1px solid var(--matrix-green); padding: 20px; box-shadow: 0 0 15px var(--matrix-green); }
-        h1, h2, h3 { color: var(--matrix-green); text-transform: uppercase; border-bottom: 1px solid var(--matrix-green); padding-bottom: 5px; }
-        .highlight { color: var(--matrix-green); font-weight: bold; }
-        .terminal { background: black; padding: 15px; border-radius: 5px; overflow-x: auto; white-space: pre; font-size: 14px; margin: 20px 0; }
-        .badge-list img { margin-right: 5px; margin-bottom: 5px; }
-        a { color: var(--matrix-green); text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body { background-color: #0d1117; color: #00FF41; font-family: 'Courier New', Courier, monospace; margin: 0; padding: 20px; display: flex; justify-content: center; }
+        .terminal-window { max-width: 800px; width: 100%; border: 1px solid #00FF41; padding: 20px; box-shadow: 0 0 20px rgba(0, 255, 65, 0.2); }
+        h1 { border-bottom: 2px solid #00FF41; padding-bottom: 10px; font-size: 1.5em; }
+        .status-line { margin: 10px 0; font-weight: bold; }
+        .info-block { color: #ffffff; border-left: 3px solid #00FF41; padding-left: 15px; margin: 20px 0; }
+        .blink { animation: blinker 1s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0; } }
+        .social-btns a { display: inline-block; margin-top: 10px; text-decoration: none; }
+        img { border-radius: 3px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>> ACCESSING MAINFRAME...</h1>
-        <p>Welcome, <span class="highlight">Trần Lai An</span>. System access granted.</p>
+    <div class="terminal-window">
+        <h1>> TRAN_LAI_AN_MAINFRAME_v1.0</h1>
+        <div class="status-line">STATUS: <span class="blink">ONLINE</span> | LOCATION: VINH LONG, VN</div>
         
-        <h2>📂 [SYSTEM_PROFILE]</h2>
-        <ul>
-            <li><strong>Identity:</strong> Trần Lai An (06/08/2007)</li>
-            <li><strong>Location:</strong> Cau Ke, Vinh Long Province, VN</li>
-            <li><strong>Education:</strong> IT High Quality @ Can Tho University (CTU)</li>
-        </ul>
-
-        <h2>💻 [TECHNICAL_SKILLS]</h2>
-        <p>Languages: Java, Python, C++, C#, Ruby, HTML/CSS</p>
-        <div class="badge-list">
-            <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
-            <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-            <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+        <div class="info-block">
+            <p>> 👤 IDENTITY: <strong>Trần Lai An</strong> (Aug 06, 2007)</p>
+            <p>> 🎓 ACADEMIC: <strong>IT High Quality Program</strong> @ CTU</p>
+            <p>> 🚀 EXPERTISE: Java, Python, C++, DevOps Architect</p>
         </div>
 
-        <h2>🕒 [ACTIVITY_MONITOR]</h2>
-        <div class="terminal">
-| TIME_RANGE (ICT) | PROCESS_NAME        | SYSTEM_STATUS  |
-|------------------|---------------------|----------------|
-| 08:30 - 11:30    | CTU_University_Lab  | [ EXECUTING ]  |
-| 13:30 - 17:30    | Research_&_DevOps   | [ RUNNING ]    |
-| 20:00 - 00:00    | Deep_Coding_Session | [ OVERCLOCK ]  |
+        <h3>[ LANGUAGE_INTERFACE ]</h3>
+        <p>🇺🇸 EN [PROFESSIONAL] | 🇰🇷 KR [INTERMEDIATE] | 🇯🇵 JA [BASIC]</p>
+
+        <h3>[ CONNECT_WITH_ME ]</h3>
+        <div class="social-btns">
+            <a href="mailto:anjoestar0@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+            <a href="https://www.facebook.com/namikaze0608"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" /></a>
         </div>
 
-        <h2>🤝 [CONNECT_WITH_ME]</h2>
-        <p>
-            <a href="mailto:anjoestar0@gmail.com">📧 Email</a> | 
-            <a href="https://www.facebook.com/namikaze0608">📘 Facebook</a>
-        </p>
+        <p style="margin-top: 30px; font-size: 0.8em; color: #888;">> End of transmission_</p>
     </div>
 </body>
 </html>
