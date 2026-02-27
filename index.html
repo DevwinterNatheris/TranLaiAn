@@ -120,12 +120,7 @@
             flex-wrap: wrap;
         }
         
-        .badge-row img {
-            transition: transform 0.2s;
-        }
-        .badge-row img:hover {
-            transform: translateY(-2px);
-        }
+        .badge-row img:hover { transform: translateY(-2px); }
 
         .info-grid {
             display: grid;
@@ -135,15 +130,31 @@
             font-size: 0.95em;
         }
 
-        .label { 
-            color: #888; 
-            text-shadow: none;
-        }
-        strong {
-            color: #fff;
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+        .label { color: #888; text-shadow: none; }
+        strong { color: #fff; text-shadow: 0 0 5px rgba(255, 255, 255, 0.4); }
+        
+        /* Bổ sung style cho List Kinh nghiệm */
+        .terminal-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
         
+        .terminal-list li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .terminal-list li::before {
+            content: ">>";
+            position: absolute;
+            left: 0;
+            color: var(--neon-green);
+            font-weight: bold;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -159,38 +170,14 @@
             transition: background 0.2s;
         }
 
-        th {
-            background: rgba(0, 255, 65, 0.1);
-            color: #fff;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
+        th { background: rgba(0, 255, 65, 0.1); color: #fff; font-weight: 600; }
+        tr:hover td { background-color: rgba(0, 255, 65, 0.08); color: #fff; }
 
-        tr:hover td {
-            background-color: rgba(0, 255, 65, 0.08);
-            color: #fff;
-        }
+        .social-links { display: flex; gap: 15px; margin-top: 15px; }
+        .social-links a img { transition: all 0.3s ease; filter: grayscale(20%); }
+        .social-links a:hover img { transform: scale(1.05); filter: grayscale(0%); box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
 
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .social-links a img {
-            transition: all 0.3s ease;
-            filter: grayscale(20%);
-        }
-
-        .social-links a:hover img {
-            transform: scale(1.05);
-            filter: grayscale(0%);
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-        }
-
-        a { color: var(--neon-green); text-decoration: none; }
-        a:hover { text-decoration: underline; text-shadow: 0 0 8px var(--neon-green); }
-
+        /* Đã thay link GIF ổn định hơn */
         .matrix-gif {
             width: 100%;
             height: 120px;
@@ -200,11 +187,6 @@
             opacity: 0.8;
             margin-bottom: 15px;
             box-shadow: 0 0 15px rgba(0, 255, 65, 0.1);
-            transition: opacity 0.3s;
-        }
-        
-        .matrix-gif:hover {
-            opacity: 1;
         }
     </style>
 </head>
@@ -222,7 +204,7 @@
 
     <div class="terminal-content">
         <div style="text-align: center; margin-bottom: 20px;">
-            <img src="https://i.pinimg.com/originals/27/14/66/271466088d2274474d28d682bfdc35df.gif" class="matrix-gif" alt="Matrix">
+            <img src="https://media.giphy.com/media/VwXcgwGIPyiiY/giphy.gif" class="matrix-gif" alt="Matrix Rain Effect">
             <div class="typing-container">
                 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=00FF41&center=true&vCenter=true&width=700&lines=Initializing+DevOps+Environment...;Accessing+CTU+High+Quality+Database...;Welcome+Trần+Lai+An+to+the+Command+Center." />
             </div>
@@ -240,21 +222,33 @@
                 <span class="label">📅 Birth:</span> <span>August 6th, 2007</span>
                 <span class="label">📍 Location:</span> <span>Cau Ke, Vinh Long, VN</span>
                 <span class="label">🎓 Academic:</span> <span>IT (High Quality) - CTU</span>
+                <span class="label">🚀 Specialization:</span> <span style="color: #fff;">DevOps Engineering, System Architecture, & Open Source</span>
             </div>
         </div>
 
         <div class="section">
             <div class="section-title">💻 [ TECHNICAL_ARSENAL ]</div>
-            <img src="https://skillicons.dev/icons?i=java,py,cpp,cs,docker,kubernetes,linux,bash,aws,jenkins,terraform&theme=dark" width="100%" style="margin-top: 5px;"/>
+            <img src="https://skillicons.dev/icons?i=java,py,cpp,cs,ruby,html,git,github,docker,kubernetes,linux,bash,aws,jenkins,terraform&theme=dark" width="100%" style="margin-top: 5px;"/>
+        </div>
+
+        <div class="section">
+            <div class="section-title">🏆 [ EXPERIENCE_&_CONTRIBUTIONS ]</div>
+            <ul class="terminal-list">
+                <li>🛠️ <strong>Open Source Architect:</strong> Massive contributions to various repositories on GitHub, focusing on automation and code optimization.</li>
+                <li>🌐 <strong>Community Leader:</strong> Highly active on major Tech Forums, providing insights and solutions for complex programming challenges.</li>
+                <li>⚡ <strong>Polyglot Developer:</strong> Expert in multiple programming languages: <code>Java</code>, <code>Python</code>, <code>C++</code>, <code>C#</code>, <code>Ruby</code>.</li>
+            </ul>
         </div>
 
         <div class="section">
             <div class="section-title">🌐 [ LANGUAGE_INTERFACE ]</div>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 5px;">
-                <div>🇺🇸 English - <span style="color: #fff;">[PROFESSIONAL]</span></div>
-                <div>🇰🇷 Korean - <span style="color: #fff;">[INTERMEDIATE]</span></div>
-                <div>🇯🇵 Japanese - <span style="color: #fff;">[BASIC]</span></div>
-                <div>🇩🇪 German - <span style="color: #fff;">[LEARNING]</span></div>
+                <div>🇺🇸 English - <span style="color: #fff;">[ PROFESSIONAL_COMM ]</span></div>
+                <div>🇰🇷 Korean - <span style="color: #fff;">[ INTERMEDIATE_DATA ]</span></div>
+                <div>🇯🇵 Japanese - <span style="color: #fff;">[ BASIC_INTERFACE ]</span></div>
+                <div>🇨🇳 Chinese - <span style="color: #fff;">[ BASIC_PROCESSING ]</span></div>
+                <div>🇩🇪 German - <span style="color: #fff;">[ LEARNING_MODE ]</span></div>
+                <div>🇮🇳 Hindi - <span style="color: #fff;">[ EXPLORING_MODE ]</span></div>
             </div>
         </div>
 
@@ -263,12 +257,17 @@
             <table>
                 <thead>
                     <tr>
-                        <th>TIME (ICT)</th>
-                        <th>PROCESS NAME</th>
-                        <th>STATUS</th>
+                        <th>TIME_RANGE (ICT)</th>
+                        <th>PROCESS_NAME</th>
+                        <th>SYSTEM_STATUS</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>07:00 - 08:30</td>
+                        <td>Wake_Up_&_Coffee</td>
+                        <td style="color: #fff;">[ WARMING_UP ]</td>
+                    </tr>
                     <tr>
                         <td>08:30 - 11:30</td>
                         <td>CTU_University_Lab</td>
@@ -290,6 +289,7 @@
 
         <div style="margin-top: 25px; text-align: left; padding: 0 5px;">
             <div style="font-weight: bold; color: #fff; text-shadow: 0 0 5px var(--neon-green);">🤝 [ CONNECT_WITH_ME ]</div>
+            <div style="font-size: 0.9em; color: #888; margin-top: 5px;">> Initializing outgoing secure connection...</div>
             <div class="social-links">
                 <a href="mailto:anjoestar0@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
                 <a href="https://www.facebook.com/namikaze0608"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" /></a>
