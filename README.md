@@ -50,6 +50,32 @@
 </p>
 ---
 
+### 🕵️ [HUMAN_INTERFACE_ASSETS]
+**> Scanning personal interests...**
+- 🎮 **Tactical Simulation:** Khám phá thế giới qua các tựa game chiến thuật và phản xạ cao.
+- 🎧 **Cyber-Acoustics:** Lofi & Synthwave — Tần số âm thanh giúp tối ưu hóa luồng suy nghĩ khi fix bug.
+- ☕ **Dark Matter Extraction:** Nghiện hương vị cà phê đậm đặc để duy trì uptime của não bộ.
+- 📸 **Visual Capturing:** Lưu giữ các cấu trúc thế giới thực qua ống kính nhiếp ảnh.
+- 🛸 **Tech Scouting:** Luôn truy lùng các công nghệ mới để tích hợp vào hệ thống cá nhân.
+
+---
+
+### 🕒 [ACTIVITY_MONITOR: UPTIME]
+**> Tracking neural activity on GitHub...**
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=YOUR_USERNAME&theme=matrix" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=YOUR_USERNAME&theme=matrix" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_USERNAME&layout=compact&theme=matrix&display_name=Trần%20Lai%20An" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=YOUR_USERNAME&theme=matrix" />
+</p>
+
 ### 📡 ENCRYPTED_COMMUNICATION
 <p align="center">
 <a href="https://www.facebook.com/namikaze0608"><img src="https://img.shields.io/badge/FB_LINK-00FF41?style=for-the-badge&logo=facebook&logoColor=00FF41&labelColor=black" /></a>
