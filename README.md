@@ -43,7 +43,7 @@
 
 ---
 
-### 📊 GitHub Activity Graph (Hầm hố hơn)
+### 📊 GitHub Activity Graph
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=radical&rank_icon=github" alt="GitHub Stats" />
 </p>
