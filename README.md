@@ -60,30 +60,19 @@
 📸 Visual_Capturing: Rendering real-world via photography.
 
 🛸 Tech_Scouting: Scouting for cutting-edge Cloud tech.
-🌐 [LANGUAGE_INTERFACE: MULTI-REGION SUPPORT]
-🇺🇸 English <img src="https://img.shields.io/badge/USA-PROFESSIONAL_COMM-00FF41?style=for-the-badge&logo=american-express&logoColor=black&labelColor=00FF41" />
+---
+🌐 [LANGUAGE_INTERFACE: REGIONAL PACKS]
+🇺🇸 English [ STATUS: High-speed communication & documentation enabled ]
 
-[ STATUS: High-speed communication & documentation enabled ]
+🇰🇷 Korean (한국어) [ STATUS: Intermediate data processing & conversation ]
 
-🇰🇷 Korean (한국어) <img src="https://img.shields.io/badge/KOREA-INTERMEDIATE_DATA-00FF41?style=for-the-badge&logo=naver&logoColor=black&labelColor=00FF41" />
+🇯🇵 Japanese (日本語) [ STATUS: Basic interface navigation & reading ]
 
-[ STATUS: Intermediate data processing & conversation ]
+🇨🇳 Chinese (中文) [ STATUS: Foundational language processing unit ]
 
-🇯🇵 Japanese (日本語) <img src="https://img.shields.io/badge/JAPAN-BASIC_INTERFACE-00FF41?style=for-the-badge&logo=nintendo&logoColor=black&labelColor=00FF41" />
+🇩🇪 German (Deutsch) [ STATUS: New language pack currently downloading... ]
 
-[ STATUS: Basic interface navigation & reading ]
-
-🇨🇳 Chinese (中文) <img src="https://img.shields.io/badge/CHINA-BASIC_PROCESSING-00FF41?style=for-the-badge&logo=wechat&logoColor=black&labelColor=00FF41" />
-
-[ STATUS: Foundational language processing unit ]
-
-🇩🇪 German (Deutsch) <img src="https://img.shields.io/badge/GERMANY-LEARNING_MODE-00FF41?style=for-the-badge&logo=mercedes-benz&logoColor=black&labelColor=00FF41" />
-
-[ STATUS: New language pack currently downloading... ]
-
-🇮🇳 Hindi (हिन्दी) <img src="https://img.shields.io/badge/INDIA-EXPLORING_MODE-00FF41?style=for-the-badge&logo=tata&logoColor=black&labelColor=00FF41" />
-
-[ STATUS: Exploring linguistic structures & syntax ]
+🇮🇳 Hindi (हिन्दी) [ STATUS: Exploring linguistic structures & syntax ]
 ### 🕒 [TERMINAL: ACTIVITY_MONITOR]
 ```zsh
 -----------------------------------------------------------
