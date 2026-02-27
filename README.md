@@ -17,3 +17,24 @@
  | |_| |  __/\ V /   | |_| | |_) \__ \  | |__|  __/ | (_| | | | | |  __/  __/ |   
  |____/ \___| \_/     \___/| .__/|___/  |_____\___|  \__, |_|_| |_|\___|\___|_|   
                            |_|                       |___/
+<p align="left">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/USER-TRAN_LAI_AN-00FF41%3Fstyle%3Dflat-square%26labelColor%3Dblack" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/CLASS-IT_HIGH_QUALITY_K51-00FF41%3Fstyle%3Dflat-square%26labelColor%3Dblack" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/UNIVERSITY-CTU-00FF41%3Fstyle%3Dflat-square%26labelColor%3Dblack" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/ROLE-DEVOPS_ENGINEER-00FF41%3Fstyle%3Dflat-square%26labelColor%3Dblack" />
+</p>
+👤 Name: Trần Lai An
+
+🎓 Education: Information Technology High Quality Program - Can Tho University.
+
+🚀 Specialization: DevOps, Automation, and System Architecture.
+
+🧠 Personality: The Architect (INTJ-A) - Strategic, logical, and efficient.
+
+☕ Hobbies: Coding with Lofi music, Gaming, and Photography.
+<p align="left">
+<a href="https://skillicons.dev"><img src="https://www.google.com/search?q=https://skillicons.dev/icons%3Fi%3Djava,dotnet,ruby,cpp,cs%26theme%3Ddark" /></a>
+</p>
+<p align="left">
+<a href="https://skillicons.dev"><img src="https://www.google.com/search?q=https://skillicons.dev/icons%3Fi%3Ddocker,kubernetes,linux,bash,aws,jenkins,terraform%26theme%3Ddark" /></a>
+</p>
