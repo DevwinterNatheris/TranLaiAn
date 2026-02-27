@@ -52,14 +52,6 @@
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=matrix" alt="GitHub Streak" />
 </p>
-
----
-
-### ⚡ SYSTEM_ACTIVITY_SNAKE
-<p align="center">
-  <img src="https://raw.githubusercontent.com/DevwinterNatheris/DevwinterNatheris/output/github-contribution-grid-snake.svg" alt="Snake Animation" />
-</p>
-
 ---
 
 ### 📡 ENCRYPTED_COMMUNICATION
