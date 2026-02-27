@@ -60,21 +60,31 @@
 
 ---
 
-### 🕒 [ACTIVITY_MONITOR: UPTIME]
-**> Tracking neural activity on GitHub...**
+---
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=YOUR_USERNAME&theme=matrix" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=YOUR_USERNAME&theme=matrix" />
-</p>
+### 🕒 [TERMINAL: ACTIVITY_MONITOR]
+**> systemctl status human-activity.service**
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=YOUR_USERNAME&layout=compact&theme=matrix&display_name=Trần%20Lai%20An" />
-</p>
+```zsh
+[LOG] Initializing Activity Monitor for User: TRAN LAI AN
+[LOG] Status: ONLINE (High Productivity Mode)
+[LOG] Location: CTU_IT_High_Quality_Lab
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=YOUR_USERNAME&theme=matrix" />
-</p>
+-----------------------------------------------------------
+| TIME_RANGE (ICT) | PROCESS_NAME        | SYSTEM_STATUS  |
+|------------------|---------------------|----------------|
+| 07:00 - 08:30    | Wake_Up_&_Coffee    | [ WARMING_UP ] |
+| 08:30 - 11:30    | CTU_University_Lab  | [ EXECUTING ]  |
+| 11:30 - 13:30    | Power_Nap_&_Lunch   | [ STANDBY ]    |
+| 13:30 - 17:30    | Research_&_DevOps   | [ RUNNING ]    |
+| 17:30 - 20:00    | Physical_Sync_&_Gym | [ OPTIMIZING ] |
+| 20:00 - 00:00    | Deep_Coding_Session | [ OVERCLOCK ]  |
+| 00:00 - 07:00    | Neural_Sleep_Cycle  | [ HIBERNATING ]|
+-----------------------------------------------------------
+
+[REPORT] Peak Performance detected at 22:00 (Matrix Vibe)
+[REPORT] Average Uptime: 17 Hours / Day
+[REPORT] Task_Priority: Automation > Manual_Task
 
 ### 📡 ENCRYPTED_COMMUNICATION
 <p align="center">
