@@ -72,7 +72,7 @@
 <a href="https://www.facebook.com/namikaze0608">
 <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" />
 </a>
-<a href="https://www.google.com/search?q=https://github.com/DevwinterNatheris">
+<a href="https://www.google.com/search?q=https://[github.com/DevwinterNatheris](https://github.com/DevwinterNatheris)">
 <img src="https://www.google.com/search?q=https://img.shields.io/badge/GitHub-181717%3Fstyle%3Dfor-the-badge%26logo%3Dgithub%26logoColor%3Dwhite" />
 </a>
 </p>
