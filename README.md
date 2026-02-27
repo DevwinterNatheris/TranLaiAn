@@ -50,24 +50,32 @@
 </p>
 ---
 
-### 🕵️ [HUMAN_INTERFACE_ASSETS]
-**> Scanning personal interests...**
-> cat /home/tranlaian/interests.log
+🕵️ [PERSONAL_CORE_INTERESTS]
+🎮 Tactical_Simulations: High-reflex & strategic gameplay.
 
-* [INT] Tactical_Simulations: Navigating virtual worlds through high-reflex & strategic gameplay.
-* [INT] Cyber_Acoustics: Lofi & Synthwave — Frequencies optimized for deep focus and debugging sessions.
-* [INT] Dark_Matter_Extraction: Addicted to bold coffee flavors to maintain maximum brain uptime.
-* [INT] Visual_Capturing: Rendering real-world structures through the lens of photography.
-* [INT] Tech_Scouting: Scouting for cutting-edge technologies to integrate into personal infrastructure.
----
+🎧 Cyber_Acoustics: Lofi & Synthwave for deep focus.
+
+☕ Dark_Matter_Extraction: Bold coffee for brain uptime.
+
+📸 Visual_Capturing: Rendering real-world via photography.
+
+🛸 Tech_Scouting: Scouting for cutting-edge Cloud tech.
 🌐 [LANGUAGE_INTERFACE]
-English: [ PROFESSIONAL_COMM ] 🇺🇸
-Korean (한국어): [ INTERMEDIATE_DATA ] 🇰🇷
-Japanese (日本語): [ BASIC_INTERFACE ] 🇯🇵
-Chinese (中文): [ BASIC_PROCESSING ] 🇨🇳
-German (Deutsch): [ LEARNING_MODE ] 🇩🇪
-Hindi (हिन्दी): [ EXPLORING_MODE ] 🇮🇳
----
+<p align="left">
+  <img src="https://img.shields.io/badge/English-PROFESSIONAL_COMM-00FF41?style=for-the-badge&logo=google-translate&logoColor=black&labelColor=00FF41" />
+  <img src="https://img.shields.io/badge/Korean-INTERMEDIATE_DATA-00FF41?style=for-the-badge&logo=south-korea&logoColor=black&labelColor=00FF41" />
+  <img src="https://img.shields.io/badge/Japanese-BASIC_INTERFACE-00FF41?style=for-the-badge&logo=japan&logoColor=black&labelColor=00FF41" />
+  <img src="https://img.shields.io/badge/Chinese-BASIC_PROCESSING-00FF41?style=for-the-badge&logo=china&logoColor=black&labelColor=00FF41" />
+  <img src="https://img.shields.io/badge/German-LEARNING_MODE-00FF41?style=for-the-badge&logo=germany&logoColor=black&labelColor=00FF41" />
+  <img src="https://img.shields.io/badge/Hindi-EXPLORING_MODE-00FF41?style=for-the-badge&logo=india&logoColor=black&labelColor=00FF41" />
+</p>
+
+* 🇺🇸 **English:** `[ PROFESSIONAL_COMM ]` - Giao tiếp và làm việc chuyên nghiệp.
+* 🇰🇷 **Korean (한국어):** `[ INTERMEDIATE_DATA ]` - Xử lý dữ liệu và hội thoại trung cấp.
+* 🇯🇵 **Japanese (日本語):** `[ BASIC_INTERFACE ]` - Giao diện cơ bản và đọc hiểu sơ cấp.
+* 🇨🇳 **Chinese (中文):** `[ BASIC_PROCESSING ]` - Khả năng xử lý ngôn ngữ nền tảng.
+* 🇩🇪 **German (Deutsch):** `[ LEARNING_MODE ]` - Đang nạp dữ liệu ngôn ngữ mới.
+* 🇮🇳 **Hindi (हिन्दी):** `[ EXPLORING_MODE ]` - Đang thăm dò và làm quen cấu trúc.
 ### 🕒 [TERMINAL: ACTIVITY_MONITOR]
 ```zsh
 -----------------------------------------------------------
