@@ -63,11 +63,7 @@
 ---
 
 ### 🕒 [TERMINAL: ACTIVITY_MONITOR]
-**> systemctl status human-activity.service**
-
 ```zsh
-
-
 -----------------------------------------------------------
 | TIME_RANGE (ICT) | PROCESS_NAME        | SYSTEM_STATUS  |
 |------------------|---------------------|----------------|
@@ -79,3 +75,9 @@
 | 20:00 - 00:00    | Deep_Coding_Session | [ OVERCLOCK ]  |
 | 00:00 - 07:00    | Neural_Sleep_Cycle  | [ HIBERNATING ]|
 -----------------------------------------------------------
+```
+### 🤝 Connect with me
+<p align="left">
+<a href="anjoestra0@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://www.facebook.com/namikaze0608"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" /></a>
+</p>
